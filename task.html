@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auntentication task</title>
+</head>
+<body>
+
+    <h1> Aunthentication Form</h1>
+     <!-- Aunthentication-->
+
+     <form action="server/google" method="post">
+        <label for="fullname"> Full Name</label>
+        <input
+        type="text"
+        id="text"
+        name="text"
+        placeholder="Fullname"> <br/> <br/>
+
+        <label for="phone">Phone Number:</label>
+        <input 
+        type="tel" 
+        id="phone"
+        name="phone"
+        minlength="11"
+        maxlength="11"
+        placeholder="xxx-xxx-xxx"/> <br/> <br/>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required> <br/> <br/>
+
+        <label for="location">Select your location</label>
+        <input 
+        type="datetime-local" 
+        id="datetime-local"
+        name="datetime-local"/> <br/> <br/>
+        <input type="button" value="submit"/>
+
+    </form>
+</body>
+</html>
