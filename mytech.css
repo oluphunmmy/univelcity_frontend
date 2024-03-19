@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+. container {
+    width: 100px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+.container nav {
+    background-color: black;
+}
+.logo {
+    color:aqua;
+    cursor: pointer;
+    justify-content: left;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+}
+nav ul li {
+    margin-right: 30px;
+    cursor: pointer;
+    color: aqua;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav ul li:hover {
+    color: orange;
+}
+
+form {
+    background-color: coral;
+    height: 50%;
+    width: 30%;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2%;
+
+}
