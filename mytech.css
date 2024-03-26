@@ -1,10 +1,19 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #333;
+    background-position: center;
+    background-size: cover;
 }
+/*div{
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    border: 2px solid #ca730e;
+} */
 . container {
     width: 100px;
-    height: 80px;
+    height: 30px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -19,10 +28,19 @@ body{
     justify-content: left;
 }
 nav ul {
-    list-style: none;
+    list-style-type: none;
     display: flex;
     justify-content:right;
     align-items: center;
+    margin: 0;
+    padding: 20px;
+    border-radius: ;
+}
+ul > li {
+    list-style-type: none;
+    color:#a067a0;
+    background-color: rgb(48, 48, 92);
+    font-style: italic;
 }
 nav ul li {
     margin-right: 30px;
@@ -35,7 +53,7 @@ nav ul li {
 nav ul li:hover {
     color: orange;
 }
-
+/*
 form {
     background-color: coral;
     height: 50%;
@@ -45,4 +63,106 @@ form {
     text-align: center;
     padding: 2%;
 
+}
+
+#hero-container {
+    background-color: #fbfbfd;
+}
+
+
+#hero2-container {
+    background-color: #000000;
+}
+
+
+#hero3-container {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    padding: 5px;
+    margin: 0px;
+    gap: 5px;
+}
+
+
+.division {
+
+    width: 50vw;
+}
+
+#division1 {
+    background-color: #fbfbfd;
+  
+}
+
+#division2 {
+
+    background-color: #000000;
+} */
+
+.grid-container {
+
+    display: grid;
+    grid-template-rows: 500px 500px;
+}
+.grid-item {
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+#grid1 {
+    background-image: url('../image/my\ background.jpg');
+}
+.container {
+    display: flex;
+    flex-direction: column;
+   /* justify-content: space-between; */
+    height: 100vh;
+
+}
+.top-row, .bottom-row {
+/*  arranges horizontally*/
+    display: flex;
+}
+.box {
+    width: 50%;
+    border: 1px  solid #000000;
+    padding: 10px;
+    background-color: red;
+    height: 100vh;
+}
+
+/* CSS FLOAT */
+.float-container{
+    flex-direction: column;
+    float: right;
+}
+.floated{
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    float: left;
+}
+
+.content{
+    margin-right: 120px;
+
+}
+.positioned{
+    background-color: bisque;
+    top: 50px;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    position: sticky;
+}
+
+.Box-animation{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    animation: grow-shrink 2s infinite alternate;
+}
+@keyframes identifier {
+    
 }
