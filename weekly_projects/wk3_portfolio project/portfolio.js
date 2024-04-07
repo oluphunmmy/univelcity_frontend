@@ -1,5 +1,11 @@
-const heading = document.getElementById('mainHeading');
-  const btn = document.getElementById('toggleBtn');
-  btn.addEventListener('click', (e) => {
-    heading.classList.toggle('hidden');
-  });
+function toggleText() {
+  var hiddenText = document.getElementById("hiddenText");
+  var toggleButton = document.getElementById("toggleButton");
+  if (hiddenText.style.display === "none") {
+    hiddenText.style.display = "block";
+    toggleButton.textContent = "Hide Text";
+  } else {
+    hiddenText.style.display = "none";
+    toggleButton.textContent = "Show Text";
+  }
+}
