@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(56, 49, 49);
+    flex: auto;
+}
+#login-form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+#login-form h2{
+    color: #2196f3;
+    margin-left: 120px;
+}
+input, button{
+    padding: 20px;
+    border: 1px solid #999;
+    outline: none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #eee;
+    font-size: 18px;
+}
+button{
+    background-color: #2196f3;
+    cursor: pointer;
+}
+#error-msg {
+    display: none;
+    color: #f00;
+    margin: 0 0 10px 10px;
+}
