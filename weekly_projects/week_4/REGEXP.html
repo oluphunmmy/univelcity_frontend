@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REGEXP</title>
-    <link rel="stylesheet" href="REGEXP.css">
-    <script src="REGEXP.js"></script>
+    <link rel="stylesheet" href="index.css">
+    
 </head>
 <body id="wrappper">
+
     <form id="login-form">
         <h2>Pattern Form</h2>
-        <input id="username" type="text"  name="username" placeholder="Enter Your Username">
-
-        <p Id="error-msg">please enter a valid username</p>
+        <input id="username" type="text" name="username" placeholder="Enter Your Username">
+        <p id="error-msg" style="display: none;">Please enter a valid username (3-12 characters alphanumeric or underscore)</p>
         <input id="password" type="password" name="password" placeholder="Enter password">
         <button type="submit">Login</button>
     </form>
+    
+    <script src="index.js"></script>
     
 </body>
 </html>

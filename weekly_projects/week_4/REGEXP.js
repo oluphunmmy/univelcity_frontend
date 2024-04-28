@@ -1,15 +1,25 @@
-var username = document.getElementById('username');
-var loginFform = document.getElementById('login-form');
-var usernameErrPara = document.getElementById('error-msg');
-//initialize regEx pattern
+document.addEventListener("DOMContentLoaded", function() {
+    let username = document.getElementById('username');
+    let usernameErrPara = document.getElementById('error-msg');
 
-username.addEventListener("input", function(e) {
-    var Pattern = /^[\w]{6,8}$/;
-    var currentValue = e.target.value;
-    var Valid = Pattern.test(currentValue);
-    if(Valid){
-        usernameErrPara.style.display = 'block'
-    } else {
-        usernameErrPara.style.display = 'none'
+    username.addEventListener("input", function(e) {
+        let pattern = /^\w{3,12}$/;
+        let currentValue = e.target.value;
+        let valid = pattern.test(currentValue);
+
+        if(valid){
+            usernameErrPara.style.display = 'none';
+        } else {
+            usernameErrPara.style.display = 'block';
+        }
+    });
+
+    // Show error message on page load if initial value is invalid
+    let currentValue = username.value;
+    let pattern = /^\w{3,12}$/;
+    let valid = pattern.test(currentValue);
+
+    if(!valid){
+        usernameErrPara.style.display = 'block';
     }
-})
+});

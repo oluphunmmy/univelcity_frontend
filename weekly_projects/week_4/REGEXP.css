@@ -1,35 +1,52 @@
 * {
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: rgb(56, 49, 49);
-    flex: auto;
+    margin: 0; /* Added to remove default body margin */
+    display: flex; /* Added to stretch content */
+    justify-content: center; /* Added to center content horizontally */
+    align-items: center; /* Added to center content vertically */
+    min-height: 100vh; /* Added to ensure full viewport height */
 }
-#login-form{
+
+#login-form {
     display: flex;
     flex-direction: column;
     max-width: 400px;
     margin: auto;
+    background-color: #fff; /* Added to give form a white background */
+    padding: 20px; /* Added to create space around form elements */
+    border-radius: 10px; /* Added for rounded corners */
 }
-#login-form h2{
+
+#login-form h2 {
     color: #2196f3;
-    margin-left: 120px;
+    text-align: center; /* Centered the heading */
+    margin-bottom: 20px; /* Added space below heading */
 }
-input, button{
-    padding: 20px;
+
+input,
+button {
+    padding: 12px; /* Reduced padding for a more compact look */
     border: 1px solid #999;
     outline: none;
     margin-bottom: 10px;
-    border-radius: 10px;
-    background-color: #eee;
-    font-size: 18px;
+    border-radius: 5px; /* Reduced border-radius for a slightly less rounded look */
+    font-size: 16px; /* Slightly reduced font size */
 }
-button{
+
+button {
     background-color: #2196f3;
+    color: #fff; /* Added text color for contrast */
     cursor: pointer;
 }
+
 #error-msg {
     display: none;
     color: #f00;
-    margin: 0 0 10px 10px;
+    margin-top: 5px; /* Adjusted margin for better spacing */
+    text-align: center; /* Centered the error message */
+    font-size: small;
 }
